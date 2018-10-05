@@ -35,7 +35,7 @@ public class FinancePageObject extends BasePageObject {
 
     }
 
-    public FinancePageObject verifyDollarPurchasePrice() {
+    public FinancePageObject getDollarPurchasePrice() {
 
 
         WebElement dollarPurchasePrice =
@@ -50,7 +50,7 @@ public class FinancePageObject extends BasePageObject {
 
     }
 
-    public FinancePageObject verifyDollarSalePrice() {
+    public FinancePageObject getDollarSalePrice() {
 
         WebElement dollarSalePrice =
                 webDriver.findElement(By.xpath("/html/body/div[2]/div[3]/div/div[1]/div[1]/div[1]/div/table/tbody/tr[1]/td[2]/span/span[1]"));

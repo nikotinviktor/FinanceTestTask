@@ -20,8 +20,8 @@ public class FinanceUaTest extends BaseTest {
     public void findDifferenceBetweenDollarSaleAndPurchasePrices() {
 
         financePage.goToMainPage()
-                .verifyDollarPurchasePrice()
-                .verifyDollarSalePrice()
+                .getDollarPurchasePrice()
+                .getDollarSalePrice()
                 .findDifferenceBetweenDollarSaleAndPurchasePrices()
                 .verifyDollarSalePriceIsHigherThanPurchasePrice();
 
