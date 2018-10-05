@@ -2,8 +2,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pages.FinancePageObject;
 
-import static net.bytebuddy.matcher.ElementMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FinanceUaTest extends BaseTest {
@@ -35,7 +33,7 @@ public class FinanceUaTest extends BaseTest {
 
         financePage.goToMainPage()
                 .enterDollarAmount()
-                .verifyAverageDollarPurchasePrice()
+                .getAverageDollarPurchasePrice()
                 .calculateExpectedAmount()
                 .getFinalHryvniaAmount();
                 assertEquals(financePage.calculateExpectedAmount(), financePage.getFinalHryvniaAmount());

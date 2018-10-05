@@ -106,7 +106,7 @@ public class FinancePageObject extends BasePageObject {
         return this;
     }
 
-    public FinancePageObject verifyAverageDollarPurchasePrice() {
+    public FinancePageObject getAverageDollarPurchasePrice() {
 
         WebElement averagePurchasePriceField =
                 webDriver.findElement(By.xpath("//*[@id=\'latest_currency_container\']/tfoot[1]/tr[1]/td[1]/span/span"));
